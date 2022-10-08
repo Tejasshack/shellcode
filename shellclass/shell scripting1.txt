@@ -1,7 +1,7 @@
 understanding bash 
 
-#!/bin/bash 
-// #sharp !bang  #!shebang
+#!/bin/bash                     //WHEN YOU ENTER BASH SHELL
+// #sharp !bang  #!shebang      //EXPLANATION OF 3RD LINE
 
 
 -rw file permissions
