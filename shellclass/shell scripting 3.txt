@@ -1,0 +1,95 @@
+# test //this is a command which is used to return exit status
+# 0 (true) and 1 (false)
+CMD:  [$?] or test
+
+
+# if[ expression];
+then
+commands
+fi
+CMD: 
+count=100   //variable
+if [ $count -eq 100 ];
+     then
+     echo "count is 100"
+fi
+
+3:: if-else 
+if [ expression ];
+then
+commands
+else
+other commands 
+fi
+
+4:: Logical Operator
+
+4.1:: AND OPERATOR
+CMD: [ $condition1 ] && [ $condition2 ]
+CMD: [ $condition1 -a $condition2 ]
+
+4.2:: OR OPERATOR
+CMD: [ $condition1 ] || [ $condition2 ]
+CMD: [ $condition1 -o $condition2 ]
+# Arguement in command line
+
+
+# This line represents number of agruements which can accepted by terminal
+CMD: ${0...99}
+CMD: ./args.sh //script name
+CMD: echo "First arguement:" $0
+CMD: ./args.sh tejas
+Output: First arguement:tejas
+
+
+# To show total number of arguements
+CMD: $#
+
+# To show all the arguements 
+CMD: $*
+
+# To show output in many lines
+CMD: $@
+
+# Globbing in command line
+# It is a way which is used to find the files by using string manipulation
+CMD: ls *.sh //list all files with .sh extension
+CMD: ls [a-c]*.sh //list all files name with A to C
+CMD: ls [Aa]*.sh //list all files with specified alphabet A to small a
+
+
+# Export command is used to global variable
+CMD: export myvar=tejas
+
+
+
+# Array
+
+CMD: declare -a linux[7] = " 'tejas' 'rahul' 'saurabh' 'paras' 'anurag' 'prajjwal' 'baba' "
+CMD: declare -a linux[]= (input data)
+
+# Syntax to find nth element:
+CMD: ${arrayname[n]}
+
+# Syntax to find length:
+CMD: ${#arrayname[@]}
+
+# Print whole array:
+CMD: ${arrayname[@]}
+
+# print element after particular index from !an array
+CMD: ${Linux[@]:position:number of elements
+     ${Linux[@]: 1      :  2}
+
+# Replace an element in an array
+CMD: ArrayName[n]='NewWord'
+CMD: Linux[location to replace element] = 'chirag'
+
+
+# Add an element to an array
+CMD: ArrayName=("${ArrayName[@]}" "new_word_1" "New_word_2")
+CMD: Linux=("${Linux[@]}" "Ashmin")
+
+# Remove and element from an array
+CMD: unset ArrayName[IndexNumber}
+CMD: unset Linux[2]

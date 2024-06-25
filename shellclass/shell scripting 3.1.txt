@@ -1,0 +1,23 @@
+1:: File discripter
+File discripter is a type of which species the type of standar input,output,error
+For example:- FD0 - STDIN
+FD1 - STDOUT
+FD2 - STDERR
+
+
+2: read //this command is used to read input/output from stdin/stdout or from FILE DISCRIPTERS
+While doing stdin of something  < by this symbol FILE DISCRIPTER 0 is assumed automatically <0
+Vice versa goes for stdout > in this case 1 is assumed by the FILE DISCRIPTER // 1>
+
+# Directing both STDERR AND STDOUT to the same file
+// For this we can use 2>&1 and also we can use &>
+CMD:- head -n1 /etc/passwd /etc/hosts > head.both 2>&1
+Alternative CMD:- head -n1 /etc/passwd /etc/hosts &> head.both //see the difference
+
+**Special CMD:- head -n1 /etc/passwd /etc/hosts |& cat -n
+//This command displays the the lines redirected by stdoutput and stderror
+
+
+# Pipeing stdout to stderr
+// echo 'error' >&2 | cat -n
+// echo 'erro' 1>&2 | cat -n  //above both line does same work

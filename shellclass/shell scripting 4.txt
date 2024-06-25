@@ -1,0 +1,9 @@
+1: case
+CMD: syntax 
+    case)
+    echo 'statement if case is true'
+    ;;
+
+
+6793758969
+9398622332

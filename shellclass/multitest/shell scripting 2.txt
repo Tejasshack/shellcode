@@ -1,0 +1,43 @@
+# IN THIS TUTORIAL WE ARE GONNA SE RANDOM PASSWORD GENERATION
+
+1: RANDOM
+CMD : THIS GENERATES RANDOM SET OF 6 NUMBERS
+EX : PASSWORD="${RANDOM}"
+     echo "${RANDOM}"
+
+2: date 
+CMD : THIS COMMAND IS USED TO GIVE DATE AND WHETHER SPECGYING CERTAIN OPTIONS
+EX : date +%s%N
+  //%s states how much seconds have gone till 1970
+  //%N Displays duration of nano seconds
+
+
+3: WE CAN USE MAN PAGES ONLY ON THE PROGRAMS
+                       &
+  WE CAN USE HELP OPTION ONLY ON SHELLBUILTIN COMMANDS
+EX : TO CHECK IF CERTAIN COMMAND IS OF WHAT TYPE
+CMD : type -a {relative command name}
+
+4: Pipe operator/command is used to give standard output
+   {  | pipeoperator }
+CMD : echo "testing" | head -c2
+CMD : date +%S | sha256sum | head -c8
+
+
+5: BASENAME
+EX : This command strips out the path from file
+CMD : basename vagrant/luser-demo06.sh
+OUTPUT : luser-demo06.sh
+
+6: DIRNAME
+EX : This command returns the directory name where the file is stored
+  
+
+7: true
+EX : this command returns the exit status of zero
+
+8: sleep
+EX : it delays a process for some particular defined time
+ 
+9: shift 
+EX : It renames the positional parameters

@@ -1,0 +1,62 @@
+FOCA tool
+
+Understanding bash
+
+BASH= It is a command language interpreter which executes commands in linux 
+
+#!/bin/bash 
+// #sharp !bang  #!shebang
+
+
+-rw file permissions
+-r-- group permission
+r-- everone present permission
+
+after changing file permission with chmod 
+
+-rwxr-xr-x 
+
+-r read permission
+w write permission
+x execute permission
+
+chmod permission explained 
+7 = 4+2+1
+    r+w+x
+
+5 = 4 + 1
+    r+x
+5 = 4 + 1
+    r+x
+
+utime 
+command used for how much time system has been up
+
+type
+command used to display directory where exe is stored
+
+"$  your variable name here  "
+example: echo "$WORD" //where word is variable name
+
+' single quote prevent variable expansion
+" represents changes can be made in variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
