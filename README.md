@@ -2,20 +2,11 @@
 
 This repo contains shell scripting projects.
 
-## 1. Password Generator
-![Password Generator](https://github.com/Tejasshack/shellcode/tree/main/Images/password%20generator.png)
+1. Password Generator
+This project generates secure, random passwords using shell scripting. It allows users to specify the length and complexity of the passwords, ensuring robust security for various applications.
 
-## 2. File Encryption / Decryption
-Encrypting file
+2. File Encryption / Decryption
+This project provides scripts for encrypting and decrypting files. It uses strong encryption algorithms to secure sensitive data, ensuring confidentiality and protection against unauthorized access.
 
-![Encrypting File](https://github.com/Tejasshack/shellcode/tree/main/Images/encrypt.png)
-
-Encrypted file - 
-![Encrypted File](https://github.com/Tejasshack/shellcode/tree/main/Images/encrypted%20file.png)
-
-Decrypting file - 
-![Decrypting File](https://github.com/Tejasshack/shellcode/tree/main/Images/decrypt.png)
-
-## 3. Automated File Generation for Web Development Projects
-![Automate Files](https://github.com/Tejasshack/shellcode/tree/main/Images/automate%20files.png)
-
+3. Automated File Generation for Web Development Projects
+This project automates the creation of file structures for web development projects. It generates the necessary folders and files with boilerplate code, saving time and ensuring consistency across projects.
